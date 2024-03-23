@@ -13,7 +13,7 @@ workflow "Release a new version" {
 }
 
 action "release version" {
-  uses = "juankaram/sentry-release@master"
+  uses = "NSCoder/sentry-release@master"
   secrets = ["SENTRY_AUTH_TOKEN"]
   env = {
     SENTRY_ORG     = "foo"
